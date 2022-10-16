@@ -2,39 +2,63 @@ app: sm64
 mode: user.single_application
 -
 
+chatty:
+    user.toggle_chat_hack()
+
 kappa:
-    user.press_start()
+    user.press_start("kappa")
+
+outy:
+    user.camera_out("outy")
+
+inny:
+    user.camera_in("inny")
+
+lefty:
+    user.camera_left("lefty")
+
+righty:
+    user.camera_right("righty")
 
 reset:
-    user.reset_state()
+    user.reset_state("reset")
 
 camera:
-    user.camera_toggle()
+    user.camera_toggle("camera")
 
 parrot(kk):
-    user.joystick_forward()
+    user.joystick_forward("kk")
 
 parrot(wa):
-    user.single_jump()
+    user.single_jump("wa")
 
-parrot(pop):
-    user.toggle_sustain()
+parrot(hoo):
+    user.single_jump("hoo")
+
+parrot(ho):
+    user.punch("ho")
+
+parrot(yuh):
+    user.ground_pound("ya")
+
+parrot(tut):
+    user.joystick_invert("tut")
 
 parrot(cluck):
-    user.march_fast()
+    user.march_fast("cluck")
 
 parrot(cluck_low):
-    user.march_slow()
+    user.march_slow("clook")
 
 parrot(shh):
-    user.joystick_cw()
+    user.joystick_cw("shush")
 parrot(shh:repeat):
-    user.joystick_cw()
+    user.joystick_cw("shush")
 
 parrot(sss):
-    user.joystick_ccw()
+    user.joystick_ccw("hiss")
 parrot(sss:repeat):
-    user.joystick_ccw()
+    user.joystick_ccw("hiss")
 
 parrot(whis_hi):
     user.noise_debounce("whis_hi", 1)

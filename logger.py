@@ -11,6 +11,9 @@ class Logger:
         self.cache_size = cache_size
         self.events: List[Dict] = [self.null()]
 
+    def last_n(self, n):
+        return self.events[-n:]
+
     def null(self):
         return dict(
             time = datetime.datetime.now(),
